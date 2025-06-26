@@ -1,11 +1,12 @@
 # Git 
 
-##250626
+## 250626
 
-Git : DistDistributed Version Control System 분산버전 관리 시스템 
+Git : 분산버전 관리 시스템 
 
 
-기본개념 
+## 기본개념
+ 
 저장소 Repositor : 프로젝트의 모든 파일과 변경 이력이 저장되는 공간
 커밋 commit : 변경사항을 저장소에 최종 기록하는 행위
 브랜치 Branch : 독립적으로 새로운 기능 개발, 실험가능한 공간
