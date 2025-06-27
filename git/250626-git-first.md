@@ -17,7 +17,7 @@
 
 # Git & GitHub 
 
-## 1. Shell 기본 명령어
+## Shell 기본 명령어
 
 ```
 ls                    # 파일 목록 보기ls :  list
@@ -33,7 +33,7 @@ cat file.md           # 파일 내용 보기
 
 ```
 
-## 2. Vim 에디터
+##  Vim 에디터
 
 ```bash
 vi filename.md        # vim으로 파일 열기
@@ -94,44 +94,8 @@ $ pip install pre-commit # 설치
 $ pre-commit -V # 명령어 존재 확인
 $ pre-commit sample-config > .pre-commit-config.yaml # 샘플 설정 만들기 $ pre-commit run # 실행 확인
 ```
-- 설치 후 바로 실행이 되지 않아 환경변수 설정 추가
-```shell
-$ sudo vim ~/.zshrc
-# export PATH="$HOME/.local/bin:$PATH" 추가 후
-$ ource ~/.zshrc # 실행
-```
 
-```
-
-## 3. Markdown 문법
-
-```markdown
-# 제목 (h1~h6)
-## 소제목
-
-**굵은 글씨**
-*기울임 글씨*
-`단일 코드`
-~~취소선~~
-
-- 순서없는 목록
-- 목록 2
-
-1. 순서있는 목록
-2. 목록 2
-
-[링크 텍스트](링크 주소)
-![이미지 설명](이미지 주소)
-
-```python
-# 코드 블록
-print('hello')
-
-```
-
-```
-
-## 4. Git 기본 설정
+##  Git 기본 설정
 ```bash
 git config --global user.name "your-name"
 git config --global user.email "your-email@example.com"
@@ -141,12 +105,12 @@ git config --list
 
 ```
 
-## 5. Git 기본 워크플로우
+##  Git 기본 워크플로우
 
 ```bash
 # 저장소 복제
 git clone https://github.com/username/repo-name.git
-cd repo-name
+
 
 # 파일 수정 후
 git status              # 상태 확인
@@ -157,7 +121,7 @@ git push origin main   # 원격 저장소에 푸시
 
 ```
 
-## 6. Git 브랜치 관리
+##  Git 브랜치 관리
 
 ```bash
 # 브랜치 확인
@@ -183,7 +147,7 @@ git push                        # 이후 푸시
 
 ```
 
-## 7. Commit 메시지 컨벤션
+##  Commit 메시지 컨벤션
 
 ```
 feat: 새로운 기능 추가
@@ -204,7 +168,7 @@ docs: update README installation guide
 
 ```
 
-## 8. Git 문제 해결
+##  Git 문제 해결
 
 ```bash
 # 작업 디렉토리 변경사항 되돌리기
@@ -230,7 +194,7 @@ git stash list          # stash 목록
 
 ```
 
-## 9. Merge Conflict 해결
+##  Merge Conflict 해결
 
 ```bash
 # 충돌 발생시
@@ -247,7 +211,7 @@ git rebase --continue
 
 ```
 
-## 10. Pre-commit 설정
+##  Pre-commit 설정
 
 ```bash
 pip install pre-commit
@@ -258,38 +222,8 @@ pre-commit run --all-files
 
 ```
 
-## 11. Git Flow 전략
 
-### Git Flow
-
-```
-master (배포)
-├── develop (개발)
-├── feature/기능명 (기능 개발)
-├── release/버전명 (배포 준비)
-└── hotfix/버그명 (긴급 수정)
-
-```
-
-### GitHub Flow (간단)
-
-```
-main (배포)
-└── feature/기능명 (기능 개발) → Pull Request
-
-```
-
-### GitLab Flow
-
-```
-master (메인)
-├── feature/기능명 (기능 개발)
-├── pre-production (테스트)
-└── production (배포)
-
-```
-
-## 12. GitHub 협업 워크플로우
+##  GitHub 협업 워크플로우
 
 ### Fork 방식
 
@@ -308,45 +242,8 @@ git merge upstream/main
 
 ```
 
-## 13. GitHub Issues & Projects
 
-```markdown
-## Issue Template
-### Description
-문제 설명
-
-### Tasks
-- [ ] 할 일 1
-- [ ] 할 일 2
-
-### References
-- [링크](주소)
-
-```
-
-### Issue Labels
-
-- **Type**: Bug, Enhancement, Question
-- **Priority**: High, Medium, Low
-- **Status**: In Progress, Review Needed, Done
-
-## 14. Pull Request Template
-
-```markdown
-## Summary
-변경사항 요약
-
-## Proposed Changes
-- close #이슈번호 (이슈 닫기)
-- fix #이슈번호 (버그 수정)
-- resolves #이슈번호 (문제 해결)
-
-## To Reviewers
-리뷰어에게 전달할 내용
-
-```
-
-## 15. .gitignore 예시
+##  .gitignore 예시
 
 ```
 # OS
@@ -368,7 +265,7 @@ node_modules/
 
 ```
 
-## 16. README.md 구조
+##  README.md 구조
 
 ```markdown
 # 프로젝트명
@@ -409,7 +306,6 @@ node_modules/
 - 민감한 정보는 `.gitignore`에 추가
 - 충돌 해결시 꼼꼼히 확인
 - Personal Access Token 사용 (GitHub)
-
 
 
 ## Conventional Commits
